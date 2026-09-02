@@ -1,6 +1,7 @@
 <script>
   import { ChevronDown, HelpCircle } from 'lucide-svelte';
 
+  /** @type {number | null} */
   let openIndex = 0;
 
   const faqs = [
@@ -9,8 +10,8 @@
       a: 'Yes! LinkSave is 100% free with no registration or hidden fees. You can download as many videos as you want without daily restrictions.'
     },
     {
-      q: 'How do I download TikTok videos without watermark?',
-      a: 'Simply copy the TikTok video link from the app or website, paste it into LinkSave, click "Go", and select the "No Watermark (HD)" download option.'
+      q: 'How do I download YouTube videos & Shorts?',
+      a: 'Simply copy the YouTube video or Shorts link, paste it into LinkSave, and select your preferred bitrate & MP3/MP4 conversion format.'
     },
     {
       q: 'Where are downloaded videos saved on my device?',
@@ -30,6 +31,9 @@
     }
   ];
 
+  /**
+   * @param {number} index
+   */
   function toggleFaq(index) {
     openIndex = openIndex === index ? null : index;
   }

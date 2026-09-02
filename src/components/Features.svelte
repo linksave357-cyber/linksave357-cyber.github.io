@@ -10,15 +10,15 @@
       bg: 'bg-amber-500/10'
     },
     {
-      title: 'No Watermark Extraction',
-      description: 'Download clean TikTok videos and Instagram reels completely free of annoying platform watermarks.',
+      title: 'Direct Stream Extraction',
+      description: 'Download clean YouTube videos and Shorts instantly with fast stream processing.',
       icon: Zap,
       color: 'text-blue-400',
       bg: 'bg-blue-500/10'
     },
     {
       title: '100% Free & Unlimited',
-      description: 'No hidden subscription fees, no limits on daily video downloads, and no forced registration required.',
+      description: 'No hidden subscription fees, no limits on daily video downloads, and no registration required.',
       icon: Infinity,
       color: 'text-emerald-400',
       bg: 'bg-emerald-500/10'
@@ -55,7 +55,7 @@
         Designed for Speed & Simplicity
       </h2>
       <p class="mt-3 text-base text-slate-400">
-        Everything you need to save and archive social media videos effortlessly.
+        Everything you need to convert & save media videos effortlessly.
       </p>
     </div>
 

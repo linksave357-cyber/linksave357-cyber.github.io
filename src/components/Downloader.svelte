@@ -18,7 +18,7 @@
     if (expandTimer) clearTimeout(expandTimer);
     expandTimer = setTimeout(() => {
       isExpanded = false;
-    }, 1500);
+    }, 2500);
   }
 
   function refreshIframe() {
@@ -129,9 +129,9 @@
           allow="clipboard-write; clipboard-read"
         ></iframe>
 
-        <!-- Seamless bottom cap bar overlay -->
+        <!-- Seamless bottom cap bar overlay to cover server costs banner -->
         <div
-          class="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-t from-[#0A0F1D] to-transparent z-10 pointer-events-none"
+          class="absolute bottom-0 left-0 right-0 h-10 sm:h-12 bg-gradient-to-t from-[#0A0F1D] via-[#0A0F1D]/90 to-transparent z-10 pointer-events-none"
         ></div>
       </div>
 

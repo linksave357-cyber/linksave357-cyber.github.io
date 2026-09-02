@@ -1,8 +1,12 @@
 <script>
   import { Download, Menu, X, Sparkles, ShieldCheck } from 'lucide-svelte';
 
+  export let onOpenModal = (/** @type {any} */ type) => {};
   let mobileMenuOpen = false;
 
+  /**
+   * @param {string} id
+   */
   function scrollToSection(id) {
     mobileMenuOpen = false;
     const element = document.getElementById(id);
@@ -40,33 +44,33 @@
       <nav class="hidden md:flex items-center gap-1 lg:gap-2">
         <button 
           on:click={() => scrollToSection('downloader')}
-          class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
           Downloader
         </button>
         <button 
-          on:click={() => scrollToSection('platforms')}
-          class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
-        >
-          Supported Platforms
-        </button>
-        <button 
           on:click={() => scrollToSection('how-it-works')}
-          class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
           How It Works
         </button>
         <button 
           on:click={() => scrollToSection('features')}
-          class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
           Features
         </button>
         <button 
           on:click={() => scrollToSection('faq')}
-          class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
           FAQ
+        </button>
+        <button 
+          on:click={() => onOpenModal('privacy')}
+          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+        >
+          Privacy Policy
         </button>
       </nav>
 
@@ -112,12 +116,6 @@
         Downloader
       </button>
       <button
-        on:click={() => scrollToSection('platforms')}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
-      >
-        Supported Platforms
-      </button>
-      <button
         on:click={() => scrollToSection('how-it-works')}
         class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
@@ -134,6 +132,12 @@
         class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
         FAQ
+      </button>
+      <button
+        on:click={() => { mobileMenuOpen = false; onOpenModal('privacy'); }}
+        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+      >
+        Privacy Policy
       </button>
       <div class="pt-2">
         <button

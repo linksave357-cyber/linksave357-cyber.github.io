@@ -1,6 +1,11 @@
 <script>
   import { Download } from 'lucide-svelte';
 
+  export let onOpenModal = (/** @type {any} */ type) => {};
+
+  /**
+   * @param {string} id
+   */
   function scrollToSection(id) {
     const element = document.getElementById(id);
     if (element) {
@@ -22,7 +27,7 @@
           </span>
         </div>
         <p class="text-xs text-slate-400 leading-relaxed">
-          Save Videos. Simply. Fast and free online downloader for Instagram, TikTok, X, Facebook, Pinterest & Reddit.
+          Save Videos. Simply. Fast and free online video downloader and MP3 stream converter.
         </p>
       </div>
 
@@ -31,34 +36,38 @@
         <ul class="space-y-2.5 text-xs">
           <li><button on:click={() => scrollToSection('hero')} class="hover:text-white transition">Home</button></li>
           <li><button on:click={() => scrollToSection('downloader')} class="hover:text-white transition">Downloader Engine</button></li>
-          <li><button on:click={() => scrollToSection('platforms')} class="hover:text-white transition">Supported Platforms</button></li>
           <li><button on:click={() => scrollToSection('how-it-works')} class="hover:text-white transition">How It Works</button></li>
           <li><button on:click={() => scrollToSection('features')} class="hover:text-white transition">Features</button></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Platforms</h4>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Legal & Support (AdSense)</h4>
         <ul class="space-y-2.5 text-xs">
-          <li><span class="hover:text-white cursor-pointer">Instagram Reel Downloader</span></li>
-          <li><span class="hover:text-white cursor-pointer">TikTok No Watermark</span></li>
-          <li><span class="hover:text-white cursor-pointer">X / Twitter Video Downloader</span></li>
-          <li><span class="hover:text-white cursor-pointer">Facebook Video Saver</span></li>
-          <li><span class="hover:text-white cursor-pointer">Pinterest Media Extractor</span></li>
+          <li><button on:click={() => onOpenModal('privacy')} class="hover:text-white transition text-left">Privacy Policy</button></li>
+          <li><button on:click={() => onOpenModal('terms')} class="hover:text-white transition text-left">Terms of Service</button></li>
+          <li><button on:click={() => onOpenModal('about')} class="hover:text-white transition text-left">About LinkSave</button></li>
+          <li><button on:click={() => onOpenModal('contact')} class="hover:text-white transition text-left">Contact Support</button></li>
         </ul>
       </div>
 
       <div>
         <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Legal Disclaimer</h4>
         <p class="text-xs text-slate-500 leading-relaxed">
-          LinkSave is not affiliated, endorsed, or partnered with Instagram, TikTok, Twitter, Facebook, or any platform listed. All product names, logos, and brands are property of their respective owners.
+          LinkSave is an independent web application. All product names, logos, and brands are property of their respective owners.
         </p>
       </div>
     </div>
 
     <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
       <p>© 2026 LinkSave. All rights reserved.</p>
-      <p>Built with speed & care for video lovers</p>
+      <div class="flex items-center gap-4">
+        <button on:click={() => onOpenModal('privacy')} class="hover:text-slate-300 transition">Privacy</button>
+        <span>•</span>
+        <button on:click={() => onOpenModal('terms')} class="hover:text-slate-300 transition">Terms</button>
+        <span>•</span>
+        <button on:click={() => onOpenModal('contact')} class="hover:text-slate-300 transition">Contact</button>
+      </div>
     </div>
   </div>
 </footer>

@@ -42,12 +42,12 @@
         {#if activeModal === 'privacy'}
           <p class="font-semibold text-white">Effective Date: September 2026</p>
           <p>
-            At <strong>LinkSave</strong>, accessible from <code>https://linksave.app/</code>, the privacy of our visitors is one of our main priorities. This Privacy Policy document outlines the types of information collected and how it is used.
+            At <strong>LinkSave</strong>, accessible from <code>https://linksave357-cyber.github.io/linksave/</code>, the privacy of our visitors is one of our main priorities. This Privacy Policy document outlines the types of information collected and how it is used.
           </p>
           
           <h4 class="font-bold text-white text-base pt-2">1. Google AdSense & Third-Party Cookies</h4>
           <p>
-            Google is a third-party vendor on our site. It uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to <code>linksave.app</code> and other sites on the internet. Users may choose to decline the use of DART cookies by visiting the Google Ad and Content Network Privacy Policy.
+            Google is a third-party vendor on our site. It uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our website and other sites on the internet. Users may choose to decline the use of DART cookies by visiting the Google Ad and Content Network Privacy Policy.
           </p>
 
           <h4 class="font-bold text-white text-base pt-2">2. Log Files</h4>
@@ -68,12 +68,12 @@
 
           <h4 class="font-bold text-white text-base pt-2">1. Acceptable Use & Fair Usage</h4>
           <p>
-            LinkSave is provided solely for personal, non-commercial use. Users must respect copyright laws and only download content they own or have explicit authorization to download.
+            LinkSave is provided solely for personal, non-commercial, and fair-use educational purposes. Users must respect copyright laws and only download content they own, have explicit authorization to download, or content under creative commons and public domain licenses.
           </p>
 
-          <h4 class="font-bold text-white text-base pt-2">2. Intellectual Property Rights</h4>
+          <h4 class="font-bold text-white text-base pt-2">2. Intellectual Property Rights & DMCA</h4>
           <p>
-            LinkSave does not host or store copyrighted video files on its servers. All media content processed remains the property of their respective creators and copyright holders.
+            LinkSave does not host, store, or re-transmit copyrighted video or audio files on its servers. All media content remains the exclusive property of their respective creators and copyright holders.
           </p>
 
           <h4 class="font-bold text-white text-base pt-2">3. Limitation of Liability</h4>
@@ -83,7 +83,7 @@
 
         {:else if activeModal === 'about'}
           <p>
-            <strong>LinkSave</strong> is a free, high-performance online media download utility designed to help users extract HD video streams and high-quality MP3 audio files seamlessly.
+            <strong>LinkSave</strong> is a free, high-performance online media converter utility designed to help users extract video streams and high-quality MP3 audio files seamlessly for offline educational and fair-use playback.
           </p>
           <p class="pt-2">
             Our mission is to provide a clean, fast, and secure user experience across all web browsers and devices without forcing registration or software downloads.
@@ -94,8 +94,7 @@
             Have questions, feedback, or business inquiries? Get in touch with our team:
           </p>
           <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 font-mono text-xs text-blue-400">
-            <p><strong>Email Support:</strong> support@linksave.app</p>
-            <p><strong>Business Inquiries:</strong> contact@linksave.app</p>
+            <p><strong>Support & Inquiries:</strong> linksave357@gmail.com</p>
             <p><strong>Response Time:</strong> Within 24 hours</p>
           </div>
         {/if}

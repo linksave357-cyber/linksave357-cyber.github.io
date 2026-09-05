@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.iframe-crop {
+  top: -418px;
+  height: 950px;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .iframe-crop {
+    top: -310px;
+    height: 800px;
+    width: 130%;
+    transform: scale(0.76);
+    transform-origin: top left;
+  }
+}

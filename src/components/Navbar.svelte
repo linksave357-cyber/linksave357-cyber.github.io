@@ -4,6 +4,8 @@
   export let onOpenModal = (/** @type {any} */ type) => {};
   let mobileMenuOpen = false;
 
+  const baseUrl = import.meta.env.BASE_URL?.endsWith('/') ? import.meta.env.BASE_URL : (import.meta.env.BASE_URL || '/') + '/';
+
   /**
    * @param {string} id
    */
@@ -21,8 +23,8 @@
     <div class="flex items-center justify-between h-16">
       
       <!-- Brand Logo -->
-      <button 
-        on:click={() => scrollToSection('hero')} 
+      <a 
+        href={baseUrl}
         class="flex items-center gap-3 group text-left focus:outline-none"
       >
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-500 p-0.5 shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all duration-300">
@@ -38,51 +40,51 @@
             Video Downloader
           </span>
         </div>
-      </button>
+      </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-        <button 
-          on:click={() => scrollToSection('downloader')}
-          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+        <a 
+          href="{baseUrl}youtube-video-downloader/"
+          class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
-          Downloader
-        </button>
-        <button 
-          on:click={() => scrollToSection('how-it-works')}
-          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          Video Downloader
+        </a>
+        <a 
+          href="{baseUrl}youtube-to-mp3/"
+          class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
-          How It Works
-        </button>
-        <button 
-          on:click={() => scrollToSection('features')}
-          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          YouTube to MP3
+        </a>
+        <a 
+          href="{baseUrl}youtube-to-mp4/"
+          class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
-          Features
-        </button>
-        <button 
-          on:click={() => scrollToSection('faq')}
-          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          YouTube to MP4
+        </a>
+        <a 
+          href="{baseUrl}youtube-shorts-downloader/"
+          class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
-          FAQ
-        </button>
-        <button 
-          on:click={() => onOpenModal('privacy')}
-          class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
+          Shorts Downloader
+        </a>
+        <a 
+          href="{baseUrl}how-to-download-youtube-videos/"
+          class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-900/80 rounded-lg transition-colors"
         >
-          Privacy Policy
-        </button>
+          Guide
+        </a>
       </nav>
 
       <!-- CTA Button -->
       <div class="hidden sm:flex items-center gap-3">
-        <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400">
+        <div class="hidden xl:flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400">
           <ShieldCheck class="w-3.5 h-3.5" />
           <span>100% Free & Safe</span>
         </div>
         <button
           on:click={() => scrollToSection('downloader')}
-          class="relative inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-sm shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30 hover:from-blue-500 hover:to-indigo-500 transition-all duration-200"
+          class="relative inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-xs sm:text-sm shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30 hover:from-blue-500 hover:to-indigo-500 transition-all duration-200 cursor-pointer"
         >
           <Sparkles class="w-4 h-4" />
           <span>Save Video</span>
@@ -108,40 +110,46 @@
 
   <!-- Mobile Menu Dropdown -->
   {#if mobileMenuOpen}
-    <div class="md:hidden px-4 pt-2 pb-6 space-y-2 bg-slate-950/95 border-b border-slate-800">
-      <button
-        on:click={() => scrollToSection('downloader')}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+    <div class="lg:hidden px-4 pt-2 pb-6 space-y-2 bg-slate-950/95 border-b border-slate-800">
+      <a
+        href="{baseUrl}youtube-video-downloader/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
-        Downloader
-      </button>
-      <button
-        on:click={() => scrollToSection('how-it-works')}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+        Video Downloader
+      </a>
+      <a
+        href="{baseUrl}youtube-to-mp3/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
-        How It Works
-      </button>
-      <button
-        on:click={() => scrollToSection('features')}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+        YouTube to MP3
+      </a>
+      <a
+        href="{baseUrl}youtube-to-mp4/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
-        Features
-      </button>
-      <button
-        on:click={() => scrollToSection('faq')}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+        YouTube to MP4
+      </a>
+      <a
+        href="{baseUrl}youtube-shorts-downloader/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
-        FAQ
-      </button>
+        Shorts Downloader
+      </a>
+      <a
+        href="{baseUrl}how-to-download-youtube-videos/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+      >
+        Guide
+      </a>
       <button
         on:click={() => { mobileMenuOpen = false; onOpenModal('privacy'); }}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white cursor-pointer"
       >
         Privacy Policy
       </button>
       <div class="pt-2">
         <button
-          on:click={() => scrollToSection('downloader')}
+          on:click={() => { mobileMenuOpen = false; scrollToSection('downloader'); }}
           class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-blue-600 text-white font-semibold shadow-lg shadow-blue-500/25"
         >
           <Sparkles class="w-4 h-4" />

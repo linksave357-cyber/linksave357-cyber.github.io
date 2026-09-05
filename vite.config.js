@@ -1,9 +1,22 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
   base: '/linksave/',
   plugins: [svelte(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        youtubeVideoDownloader: resolve(__dirname, 'youtube-video-downloader/index.html'),
+        youtubeToMp3: resolve(__dirname, 'youtube-to-mp3/index.html'),
+        youtubeToMp4: resolve(__dirname, 'youtube-to-mp4/index.html'),
+        youtubeShortsDownloader: resolve(__dirname, 'youtube-shorts-downloader/index.html'),
+        howToDownloadYoutubeVideos: resolve(__dirname, 'how-to-download-youtube-videos/index.html')
+      }
+    }
+  }
 })

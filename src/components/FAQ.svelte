@@ -6,20 +6,20 @@
 
   const faqs = [
     {
-      q: 'Is LinkSave completely free to use?',
-      a: 'Yes! LinkSave is 100% free with no registration or hidden fees. You can download as many videos as you want without daily restrictions.'
+      q: 'How to convert YouTube to MP3 320kbps for free?',
+      a: 'Paste any YouTube link into LinkSave, click Convert, and choose high-quality 320kbps MP3 audio format to save the sound file instantly.'
     },
     {
-      q: 'How do I download YouTube videos & Shorts?',
-      a: 'Simply copy the YouTube video or Shorts link, paste it into LinkSave, and select your preferred bitrate & MP3/MP4 conversion format.'
+      q: 'How to download YouTube Shorts videos online?',
+      a: 'Copy the YouTube Shorts URL from your browser or app, paste it into the LinkSave converter box, and click Download.'
+    },
+    {
+      q: 'Is LinkSave free?',
+      a: 'Yes. LinkSave provides a free online interface for downloading and converting supported media links. No registration is required.'
     },
     {
       q: 'Where are downloaded videos saved on my device?',
       a: 'Downloaded files are saved in your web browser\'s default "Downloads" folder (or standard files location on iPhone / Android).'
-    },
-    {
-      q: 'Can I extract audio (MP3) from video links?',
-      a: 'Yes, LinkSave automatically extracts high-quality MP3 audio tracks from supported video links so you can save sound files separately.'
     },
     {
       q: 'Does LinkSave work on iPhone and Android mobile browsers?',

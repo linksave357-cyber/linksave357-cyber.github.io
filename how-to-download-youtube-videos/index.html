@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if (window.location.pathname.startsWith('/linksave')) {
+        var cleanPath = window.location.pathname.replace(/^\/linksave\/?/, '/') + window.location.search + window.location.hash;
+        window.location.replace('https://linksaves.com' + (cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath));
+      }
+    </script>
     <meta name="google-site-verification" content="9rV4o1UDstN1mp4WVFNgGUoJUmmoFA0DLsqrxkau4WA" />
     
     <!-- Google AdSense -->

@@ -42,7 +42,7 @@
         {#if activeModal === 'privacy'}
           <p class="font-semibold text-white">Effective Date: September 2026</p>
           <p>
-            At <strong>LinkSave</strong>, accessible from <code>https://linksave357-cyber.github.io/linksave/</code>, the privacy of our visitors is one of our main priorities. This Privacy Policy document outlines the types of information collected and how it is used.
+            At <strong>LinkSave</strong>, accessible from <code>https://linksaves.com/</code>, the privacy of our visitors is one of our main priorities. This Privacy Policy document outlines the types of information collected and how it is used.
           </p>
           
           <h4 class="font-bold text-white text-base pt-2">1. Google AdSense & Third-Party Cookies</h4>

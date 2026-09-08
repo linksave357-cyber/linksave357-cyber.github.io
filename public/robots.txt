@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://linksave357-cyber.github.io/linksave/sitemap.xml
+Sitemap: https://linksaves.com/sitemap.xml

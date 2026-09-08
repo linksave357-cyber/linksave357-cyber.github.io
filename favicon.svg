@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="24" fill="url(#grad)"/>
+  <path d="M30 42C30 35.3726 35.3726 30 42 30H46C49.3137 30 52 32.6863 52 36C52 39.3137 49.3137 42 46 42H42C42 42 42 42 42 42C42 42 42 42 42 42V42" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path d="M70 58C70 64.6274 64.6274 70 58 70H54C50.6863 70 48 67.3137 48 64C48 60.6863 50.6863 58 54 58H58C58 58 58 58 58 58C58 58 58 58 58 58V58" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path d="M38 50H62" stroke="#60A5FA" stroke-width="7" stroke-linecap="round"/>
+  <path d="M50 34L50 66M50 66L42 58M50 66L58 58" stroke="url(#arrowGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="50" y1="34" x2="50" y2="66" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+</svg>

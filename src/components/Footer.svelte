@@ -42,12 +42,12 @@
       </div>
 
       <div>
-        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Legal & Support (AdSense)</h4>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Legal & Support</h4>
         <ul class="space-y-2.5 text-xs">
-          <li><button on:click={() => onOpenModal('privacy')} class="hover:text-white transition text-left">Privacy Policy</button></li>
-          <li><button on:click={() => onOpenModal('terms')} class="hover:text-white transition text-left">Terms of Service</button></li>
-          <li><button on:click={() => onOpenModal('about')} class="hover:text-white transition text-left">About LinkSave</button></li>
-          <li><button on:click={() => onOpenModal('contact')} class="hover:text-white transition text-left">Contact Support</button></li>
+          <li><a href="https://linksaves.com/privacy-policy/" on:click|preventDefault={() => onOpenModal('privacy')} class="hover:text-white transition text-left block">Privacy Policy</a></li>
+          <li><a href="https://linksaves.com/terms/" on:click|preventDefault={() => onOpenModal('terms')} class="hover:text-white transition text-left block">Terms of Service</a></li>
+          <li><a href="https://linksaves.com/about/" on:click|preventDefault={() => onOpenModal('about')} class="hover:text-white transition text-left block">About LinkSave</a></li>
+          <li><a href="https://linksaves.com/contact/" on:click|preventDefault={() => onOpenModal('contact')} class="hover:text-white transition text-left block">Contact Support</a></li>
         </ul>
       </div>
 
@@ -62,11 +62,11 @@
     <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
       <p>© 2026 LinkSave. All rights reserved.</p>
       <div class="flex items-center gap-4">
-        <button on:click={() => onOpenModal('privacy')} class="hover:text-slate-300 transition">Privacy</button>
+        <a href="https://linksaves.com/privacy-policy/" class="hover:text-slate-300 transition">Privacy</a>
         <span>•</span>
-        <button on:click={() => onOpenModal('terms')} class="hover:text-slate-300 transition">Terms</button>
+        <a href="https://linksaves.com/terms/" class="hover:text-slate-300 transition">Terms</a>
         <span>•</span>
-        <button on:click={() => onOpenModal('contact')} class="hover:text-slate-300 transition">Contact</button>
+        <a href="https://linksaves.com/contact/" class="hover:text-slate-300 transition">Contact</a>
       </div>
     </div>
   </div>

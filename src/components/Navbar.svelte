@@ -141,12 +141,30 @@
       >
         Guide
       </a>
-      <button
-        on:click={() => { mobileMenuOpen = false; onOpenModal('privacy'); }}
-        class="w-full text-left px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white cursor-pointer"
+      <a
+        href="{baseUrl}about/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+      >
+        About Us
+      </a>
+      <a
+        href="{baseUrl}contact/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+      >
+        Contact Us
+      </a>
+      <a
+        href="{baseUrl}privacy-policy/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
       >
         Privacy Policy
-      </button>
+      </a>
+      <a
+        href="{baseUrl}terms/"
+        class="block px-4 py-3 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-white"
+      >
+        Terms of Service
+      </a>
       <div class="pt-2">
         <button
           on:click={() => { mobileMenuOpen = false; scrollToSection('downloader'); }}

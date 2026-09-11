@@ -10,6 +10,9 @@ export const CONFIG = {
   // Integration Mode: 'api' | 'iframe' | 'local'
   mode: import.meta.env.VITE_INTEGRATION_MODE || 'local',
 
+  // Adsterra Smartlink (smart-link-3466727)
+  smartlinkUrl: 'https://garretebonylosing.com/drj75z5sd?key=7fa063565b674b91e3e9da077b572a39',
+
   appName: 'LinkSave',
   version: '1.0.0-MVP'
 };

@@ -1,7 +1,6 @@
 <script>
   import { Download, Menu, X, Sparkles, ShieldCheck } from 'lucide-svelte';
 
-  export let onOpenModal = (/** @type {any} */ type) => {};
   let mobileMenuOpen = false;
 
   const baseUrl = import.meta.env.BASE_URL?.endsWith('/') ? import.meta.env.BASE_URL : (import.meta.env.BASE_URL || '/') + '/';

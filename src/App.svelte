@@ -25,7 +25,7 @@
 
 <div class="min-h-screen bg-slate-950 text-slate-100 selection:bg-blue-600 selection:text-white">
   <!-- Top Navigation -->
-  <Navbar onOpenModal={openModal} />
+  <Navbar />
 
   <!-- Main Hero & Downloader Engine Focus -->
   <main>

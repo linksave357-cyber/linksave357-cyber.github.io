@@ -4,25 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-      if (window.location.pathname.startsWith('/linksave')) {
+      if (window.location.hostname !== 'linksaves.com' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
         var cleanPath = window.location.pathname.replace(/^\/linksave\/?/, '/') + window.location.search + window.location.hash;
         window.location.replace('https://linksaves.com' + (cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath));
       }
     </script>
-    <meta name="google-site-verification" content="9rV4o1UDstN1mp4WVFNgGUoJUmmoFA0DLsqrxkau4WA" />
-    
-    <!-- Google AdSense -->
-    <meta name="google-adsense-account" content="ca-pub-5248159019467197">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5248159019467197" crossorigin="anonymous"></script>
-    
+    <!-- Adsterra Monetization Scripts (Popunder & Social Bar) -->
+    <script src="https://garretebonylosing.com/04/83/b4/0483b49097355c10b2e0cebac7ba0b53.js"></script>
+
     <!-- SEO Primary Meta Tags -->
     <title>LinkSave - Free YouTube Video Downloader & MP3 Converter</title>
     <meta name="title" content="LinkSave - Free YouTube Video Downloader & MP3 Converter" />
-    <meta name="description" content="Download and convert YouTube videos online with LinkSave. Save videos as MP4 or convert them to MP3 audio with our free online downloader." />
+    <meta name="description" content="Download and convert YouTube videos online for free with LinkSave. Save videos in HD MP4 or extract audio to MP3 fast with no registration required." />
     <meta name="author" content="LinkSave" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#020617" />
-    <meta name="revised" content="2026-09-05" />
+    <meta name="revised" content="2026-09-09" />
     <link rel="canonical" href="https://linksaves.com/" />
 
     <!-- Favicon & PWA Web App Manifest -->
@@ -35,7 +32,7 @@
     <meta property="og:site_name" content="LinkSave" />
     <meta property="og:url" content="https://linksaves.com/" />
     <meta property="og:title" content="LinkSave - Free YouTube Video Downloader & MP3 Converter" />
-    <meta property="og:description" content="Download and convert YouTube videos online with LinkSave. Save videos as MP4 or convert them to MP3 audio with our free online downloader." />
+    <meta property="og:description" content="Download and convert YouTube videos online for free with LinkSave. Save videos in HD MP4 or extract audio to MP3 fast with no registration required." />
     <meta property="og:image" content="https://linksaves.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -45,7 +42,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://linksaves.com/" />
     <meta name="twitter:title" content="LinkSave - Free YouTube Video Downloader & MP3 Converter" />
-    <meta name="twitter:description" content="Download and convert YouTube videos online with LinkSave. Save videos as MP4 or convert them to MP3 audio with our free online downloader." />
+    <meta name="twitter:description" content="Download and convert YouTube videos online for free with LinkSave. Save videos in HD MP4 or extract audio to MP3 fast with no registration required." />
     <meta name="twitter:image" content="https://linksaves.com/og-image.png" />
 
     <!-- Typography / Google Fonts -->
@@ -105,8 +102,8 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="/assets/main-BEZyYw82.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-BWO0iOAQ.css">
+    <script type="module" crossorigin src="/assets/main-p9iMuN84.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-BxjdIb4U.css">
   </head>
   <body class="bg-slate-950 text-slate-100 font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-blue-500 selection:text-white min-h-screen">
     
@@ -335,6 +332,19 @@
           </div>
         </section>
 
+        <!-- About LinkSave (AI RAG & Search Engine Overview) -->
+        <section id="about-linksave" class="py-16 md:py-20 bg-slate-900/60 border-t border-slate-900">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-slate-900/90 border border-blue-500/20 rounded-2xl p-6 sm:p-10 backdrop-blur-sm shadow-xl text-left sm:text-center">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-blue-400 block mb-2">Overview</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">What is LinkSave?</h2>
+              <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal">
+                <a href="https://linksaves.com/" class="font-bold text-blue-400 hover:underline">LinkSave</a> is a free, fast web application for downloading YouTube videos in HD MP4 quality and converting YouTube audio to high-bitrate 320kbps MP3 without requiring registration or software installation.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <!-- FAQ Pre-rendered -->
         <section id="faq" class="py-16 md:py-24 bg-slate-900/40 border-t border-slate-900">
           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -373,6 +383,10 @@
             <a href="https://linksaves.com/youtube-to-mp4/" class="hover:text-blue-400 transition-colors">YouTube to MP4 Converter</a>
             <a href="https://linksaves.com/youtube-shorts-downloader/" class="hover:text-blue-400 transition-colors">YouTube Shorts Downloader</a>
             <a href="https://linksaves.com/how-to-download-youtube-videos/" class="hover:text-blue-400 transition-colors">Download Guide</a>
+            <a href="https://linksaves.com/about/" class="hover:text-blue-400 transition-colors">About Us</a>
+            <a href="https://linksaves.com/contact/" class="hover:text-blue-400 transition-colors">Contact Us</a>
+            <a href="https://linksaves.com/privacy-policy/" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+            <a href="https://linksaves.com/terms/" class="hover:text-blue-400 transition-colors">Terms of Service</a>
           </div>
           <p class="text-xs text-slate-500">&copy; 2026 LinkSave. All rights reserved. Free YouTube Video Downloader &amp; MP3 Converter.</p>
         </div>
@@ -388,4 +402,8 @@
 
   </body>
 </html>
+
+
+
+
 

@@ -13,9 +13,10 @@ export const CONFIG = {
   // Adsterra Smartlink (smart-link-3466727)
   smartlinkUrl: 'https://garretebonylosing.com/jhky4egutd?key=d9ca9399efd5ec18febfadefd48f7ed5',
 
-  // Monetag MultiTag & Monetization Integration
+  // Monetag MultiTag — OFF: MultiTag OnClick hijacks every page click/redirect.
+  // Re-enable only with a zone that has OnClick/Popunder disabled in Monetag.
   monetag: {
-    enabled: true,
+    enabled: false,
     verificationCode: '', // site already verified on Monetag
     scriptUrl: 'https://quge5.com/88/tag.min.js',
     zoneId: '292461'

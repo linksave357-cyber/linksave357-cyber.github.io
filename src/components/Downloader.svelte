@@ -1,8 +1,9 @@
 <script>
   import { onMount, onDestroy } from "svelte";
-  import { Sparkles, RefreshCw, ShieldAlert } from "lucide-svelte";
+  import { Sparkles, RefreshCw, ShieldAlert, Globe, ExternalLink } from "lucide-svelte";
   import { CONFIG } from "../lib/config.js";
 
+  const vpn = CONFIG?.affiliate?.vpn;
   let videoUrl = "";
   let customReclipUrl = CONFIG.cnvmp3Url || CONFIG.reclipUrl;
   let isAutoRefreshing = false;
@@ -223,6 +224,50 @@
           MP3 / MP4
         </button>
       </div>
+
+      <!-- Contextual VPN & Geo-Restriction Callout -->
+      {#if vpn?.enabled}
+        <div
+          class="p-3 sm:p-4 rounded-2xl bg-gradient-to-r from-indigo-950/70 via-slate-900/90 to-blue-950/70 border border-indigo-500/30 shadow-lg text-left transition-all group"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex items-start sm:items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-xl bg-indigo-500/20 border border-indigo-400/30 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0 group-hover:scale-105 transition-transform"
+              >
+                <Globe class="w-4 h-4 text-cyan-400" />
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 text-[10px] font-bold uppercase tracking-wider border border-indigo-500/30">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Download Tip
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 text-[10px] font-bold border border-emerald-500/30">
+                    {vpn.discount || '72% OFF'}
+                  </span>
+                </div>
+                <h3 class="text-white font-bold text-xs sm:text-sm tracking-tight">
+                  Video blocked in your region or downloading slow?
+                </h3>
+                <p class="text-slate-400 text-[11px] sm:text-xs leading-relaxed mt-0.5">
+                  Bypass YouTube &amp; TikTok geo-blocks and prevent ISP download throttling with {vpn.provider || 'NordVPN'}.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href={vpn.url || 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=105436'}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 via-blue-600 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-md shadow-indigo-600/30 transition-all cursor-pointer shrink-0"
+            >
+              <span>Bypass Geo-Blocks</span>
+              <ExternalLink class="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </div>
+      {/if}
 
       <!-- Install LinkSave as App Banner (<1mb size only) -->
       {#if !isInstalled}

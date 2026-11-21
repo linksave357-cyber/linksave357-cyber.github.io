@@ -16,9 +16,9 @@ export const CONFIG = {
   // Monetag MultiTag & Monetization Integration
   monetag: {
     enabled: true,
-    verificationCode: '', // e.g., 'YOUR_MONETAG_VERIFICATION_CODE'
-    scriptUrl: '',        // e.g., 'https://alwingulla.com/88/tag.min.js' or MultiTag script URL
-    zoneId: ''           // e.g., '1234567'
+    verificationCode: '', // site already verified on Monetag
+    scriptUrl: 'https://quge5.com/88/tag.min.js',
+    zoneId: '292461'
   },
 
   // High-Yield Affiliate Partnerships (VPN, Privacy & Speed)

@@ -1,7 +1,7 @@
 {
-  "short_name": "LinkSave",
-  "name": "LinkSave — Free Online Video Downloader",
-  "description": "Download HD videos and MP3 audio streams from YouTube, TikTok, Instagram, X (Twitter), Facebook, Pinterest & Reddit for free.",
+  "short_name": "LinkSaves",
+  "name": "LinkSaves — Free Online Video Downloader & Audio Converter",
+  "description": "Free online video downloader and audio converter. Save videos from YouTube, TikTok, Instagram Reels, Facebook, and extract high-bitrate 320kbps MP3 audio instantly.",
   "start_url": "/",
   "background_color": "#020617",
   "theme_color": "#020617",
@@ -14,5 +14,14 @@
       "sizes": "512x512",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "share_target": {
+    "action": "/youtube-video-downloader/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
